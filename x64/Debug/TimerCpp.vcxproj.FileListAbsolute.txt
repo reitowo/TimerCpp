@@ -1,0 +1,4 @@
+E:\Work\TimerCpp\x64\Debug\TimerCpp.vcxproj.CopyComplete
+E:\Work\TimerCpp\x64\Debug\TimerCpp.exe
+E:\Work\TimerCpp\x64\Debug\TimerCpp.pdb
+E:\Work\TimerCpp\x64\Debug\boost_thread-vc142-mt-gd-x64-1_75.dll

@@ -1,0 +1,14 @@
+﻿  test.cpp
+E:\Work\TimerCpp\timercpp.h(36,36): warning C4101: “interrupted”: 未引用的局部变量
+E:\Work\TimerCpp\test.cpp(11): message : 查看对正在编译的函数 模板 实例化“void Timer::setTimeout<scopedTimerTest1::<lambda_1ae35b8ad305f120fc09e494e092476f>>(Function,int)”的引用
+          with
+          [
+              Function=scopedTimerTest1::<lambda_1ae35b8ad305f120fc09e494e092476f>
+          ]
+E:\Work\TimerCpp\timercpp.h(59,36): warning C4101: “interrupted”: 未引用的局部变量
+E:\Work\TimerCpp\test.cpp(22): message : 查看对正在编译的函数 模板 实例化“void Timer::setInterval<scopedTimerTest2::<lambda_c1a71c9049754028820abdb306c98508>>(Function,int)”的引用
+          with
+          [
+              Function=scopedTimerTest2::<lambda_c1a71c9049754028820abdb306c98508>
+          ]
+  TimerCpp.vcxproj -> E:\Work\TimerCpp\x64\Debug\TimerCpp.exe
