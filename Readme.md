@@ -7,23 +7,23 @@ A more reliable implementation of [99x's timercpp](https://github.com/99x/timerc
 Add `timercpp.h` and `timercpp.cpp` to your project.
 
 ```cpp
-	Timer timer;   
+Timer timer;   
 
-	timer.setInterval([=]()
-	{
-		static int cnt = 0;
-		++cnt;
-		std::cout << "- Count " << cnt << std::endl;
-	}, 1000);
+timer.setInterval([=]()
+{
+	static int cnt = 0;
+	++cnt;
+	std::cout << "- Count " << cnt << std::endl;
+}, 1000);
 
-	//Note that new task will kill previous task if it exists.
-	timer.setTimeout([=]()
-	{
-		std::cout << "- Timeout" << std::endl;
-	}, 1000);
+//Note that new task will kill previous task if it exists.
+timer.setTimeout([=]()
+{
+	std::cout << "- Timeout" << std::endl;
+}, 1000);
 
-	//Kill background task, it will be automatically killed when leaving a scope.
-	timer.stop();
+//Kill background task, it will be automatically killed when leaving a scope.
+timer.stop();
 ```
 
 > Automatically stop when leaving scope.
@@ -37,14 +37,14 @@ Add `timercpp.h` and `timercpp.cpp` to your project.
 > 		std::cout << "- Timeout" << std::endl;
 > 	}, 1000);
 >     
->     //Stops when leaving
+>       //Stops when leaving
 > }
 > 
 > int main()
 > {
 > 	scope();
 > 	//Will print nothing.
->     ...
+>       ...
 > }
 > ```
 
